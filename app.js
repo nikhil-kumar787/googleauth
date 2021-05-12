@@ -6,7 +6,7 @@ const morgan = require('morgan')
 const exphbs = require("express-handlebars");
 const passport = require('passport');
 const session = require('express-session');
-dotenv.config({ path: './config/config.env'});
+dotenv.config({ path: './config.env'});
 require('./config/passport')(passport)
 
 connectDB()
